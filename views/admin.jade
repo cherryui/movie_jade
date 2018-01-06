@@ -1,0 +1,46 @@
+extends ./pages/layout
+
+block content
+	.container
+
+		.row
+			form.form-horizontal(action="/admin/movie/new",method='post')
+					.form-group
+						label.col-md-2(for="inputTitle") 电影名称
+						.col-md-10
+							input#inputTitle.form-control(type="text")
+					.form-group
+						label.col-md-2.control-labe(for="inputDirector") 导演
+						.col-md-10
+							input#inputDirector.form-control(type="text")
+					.form-group
+						label.col-md-2.control-labe(for="inputCountry") 国家
+						.col-md-10
+							input#inputCountry.form-control(type="text")
+					.form-group
+						label.col-md-2.control-labe(for="inputYear") 上映年份
+						.col-md-10
+							input#inputYear.form-control(type="text")
+					.form-group
+						label.col-md-2.control-labe(for="inputLanguage") 语言
+						.col-md-10
+							input#inputLanguage.form-control(type="text")
+					.form-group
+						label.col-md-2.control-labe(for="inputFlash") 片源地址
+						.col-md-10
+							input#inputFlash.form-control(type="text")
+					.form-group
+						label.col-md-2.control-labe(for="inputSummary") 简介
+						.col-md-10
+							textarea#inputSummary.form-control(type="text")
+					.form-group
+						.col-md-2								
+						.col-md-10.text-right
+							button.btn.btn-default 录入
+
+						
+							
+						
+
+			
+

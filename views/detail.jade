@@ -1,0 +1,20 @@
+extends ./pages/layout
+
+block content
+	.container
+		.row
+			.col-md-7
+					embed(src='#{movie[id-1].flash}',allowFullScreen='true',quality='high',width='720',height='600',align='middle',type='application/x-shockwave-flash')
+				.col-md-5
+					dl.dl-horizontal
+						dt 电影名称
+						dd=movie[id-1].title
+						dt 导演
+						dd=movie[id-1].director
+						dt 年份
+						dd=movie[id-1].year
+						dt 语言
+						dd=movie[id-1].language
+						dt 简介
+						dd=movie[id-1].summary
+

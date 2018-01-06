@@ -1,0 +1,9 @@
+.container
+	.row
+		.page-header
+			- if (movie)
+				h1= movie[id-1].title
+				small 科幻迷推荐 
+			-else
+				h1= title
+				small 科幻迷推荐
